@@ -1,0 +1,31 @@
+{
+  "name": "example/whmcs-authentication",
+  "description": "",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author",
+      "email": "exmaple@example.com"
+    }
+  ],
+  "require": {
+    "alipaysdk/easysdk": "^2.0",
+    "ext-json": "*",
+    "illuminate/events": "^8.0",
+    "illuminate/routing": "^8.0",
+    "tencentcloud/sms": "^3.0"
+  },
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Example\\Addons\\Authentication\\": "app/"
+    }
+  },
+  "suggest": {
+    "illuminate/database": "有助于拉起数据库补全,但是会与 WHMCS 起冲突"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  }
+}
